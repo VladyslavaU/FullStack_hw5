@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div class="wrapper__nav">
+        <header class="header">car finder</header>
+        <ul class="nav">
+            <li class="nav__item">
+                <a class="nav__link" href="../index.html">search</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="sign_in.html">sign in</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="sign_up.html">sing up</a>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper__body">
+        <form class="wrapper__form" form action="" method="post">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">email</legend>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">password</legend>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">repeat password</legend>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+            </fieldset>
+
+            <div class="form__submit">
+                <input class="submit__button" type="submit" value="sign up">
+            </div>
+        </form>
+    </div>
+</body>
