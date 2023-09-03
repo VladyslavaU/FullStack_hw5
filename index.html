@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Finder</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper__nav">
+        <header class="header"> car finder </header>
+        <ul class="nav">
+            <li class="nav__item">
+                <a class="nav__link" href="index.html"> Search </a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="pages/sign_in.html">Sign in </a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="pages/sign_up.html">Sign up </a>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <form class="wrapper__form" form action="" method="get">
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">year & price ranges</legend>
+                <label class="form__field">Year</label>
+                <input type="number" id="year-min" min="1980" max="2023" step="1" placeholder="min">
+                <input type="number" id="year-max" min="1980" max="2023" step="1" placeholder="max">
+
+                <label class="form__field">Price</label>
+                <input type="number" id="year-min" min="0" max="200000" step="100" placeholder="min">
+                <input type="number" id="year-max" min="0" max="200000" step="100" placeholder="max">
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">body style</legend>
+                <label class="form__field" for="body">sedan</label>
+                <input class="form__checkbox" type="checkbox" id="body" name="body" value="sedan">
+
+                <label class="form__field" for="body">coupe</label>
+                <input class="form__checkbox" type="checkbox" id="body" name="body" value="coupe">
+
+                <label class="form__field" for="body">minivan</label>
+                <input class="form__checkbox" type="checkbox" id="body" name="body" value="minivan">
+
+                <label class="form__field" for="body">hatchback</label>
+                <input class="form__checkbox" type="checkbox" id="body" name="body" value="hatchback">
+
+                <label class="form__field" for="bodye">convertible</label>
+                <input class="form__checkbox" type="checkbox" id="body" name="body" value="convertible">
+
+                <label class="form__field" for="body">SUV</label>
+                <input class="form__checkbox" type="checkbox" id="body" name="body" value="suv">
+
+                <label class="form__field" for="body">station wagon</label>
+                <input class="form__checkbox" type="checkbox" id="body" name="body" value="wagon">
+
+                <label class="form__field" for="body">crossover</label>
+                <input class="form__checkbox" type="checkbox" id="body" name="body" value="crossover">
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">make</legend>
+                <label class="form__field" for="make">volvo</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="volvo">
+
+                <label class="form__field" for="make">volkswagen</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="volkswagen">
+
+                <label class="form__field" for="make">toyota</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="toyota">
+
+                <label class="form__field" for="make">ford</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="ford">
+
+                <label class="form__field" for="make">mercedes-benz</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="mercedes">
+
+                <label class="form__field" for="make">BMW</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="bmw">
+
+                <label class="form__field" for="make">audi</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="audi">
+
+                <label class="form__field" for="make">kia</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="kia">
+
+                <label class="form__field" for="make">renault</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="renault">
+
+                <label class="form__field" for="make">peugeot</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="peugeot">
+
+                <label class="form__field" for="make">skoda</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="skoda">
+
+                <label class="form__field" for="make">saab</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="saab">
+
+                <label class="form__field" for="make">nissan</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="nissan">
+
+                <label class="form__field" for="make">opel</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="opel">
+
+                <label class="form__field" for="make">citroen</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="citroen">
+
+                <label class="form__field" for="make">hyundai</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="hyundai">
+
+                <label class="form__field" for="make">mazda</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="mazda">
+
+                <label class="form__field" for="make">chevrolet</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="chevrolet">
+
+                <label class="form__field" for="make">mitsubishi</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="mitsubishi">
+
+                <label class="form__field" for="make">subaru</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="subaru">
+
+                <label class="form__field" for="make">seat</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="seat">
+
+                <label class="form__field" for="make">honda</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="honda">
+
+                <label class="form__field" for="make">fiat</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="fiat">
+
+                <label class="form__field" for="suzuki">suzuki</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="suzuki">
+
+                <label class="form__field" for="tesla">tesla</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="tesla">
+
+                <label class="form__field" for="dacia">dacia</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="dacia">
+
+                <label class="form__field" for="porsche">porsche</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="porsche">
+
+                <label class="form__field" for="mini">MINI</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="mini">
+
+                <label class="form__field" for="lexus">lexus</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="lexus">
+
+                <label class="form__field" for="jeep">jeep</label>
+                <input class="form__checkbox" type="checkbox" id="make" name="make" value="jeep">
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">country of origin</legend>
+                <label class="form__field" for="country">sweden</label>
+                <input class="form__checkbox" type="checkbox" id="country" name="country" value="sweden">
+
+                <label class="form__field" for="country">germany</label>
+                <input class="form__checkbox" type="checkbox" id="country" name="country" value="germany">
+
+                <label class="form__field" for="country">japan</label>
+                <input class="form__checkbox" type="checkbox" id="country" name="country" value="japan">
+
+                <label class="form__field" for="country">USA</label>
+                <input class="form__checkbox" type="checkbox" id="country" name="country" value="usa">
+
+                <label class="form__field" for="country">korea</label>
+                <input class="form__checkbox" type="checkbox" id="country" name="country" value="korea">
+
+                <label class="form__field" for="country">czech republic</label>
+                <input class="form__checkbox" type="checkbox" id="country" name="country" value="czechia">
+
+                <label class="form__field" for="country">spain</label>
+                <input class="form__checkbox" type="checkbox" id="country" name="country" value="spain">
+
+                <label class="form__field" for="country">italy</label>
+                <input class="form__checkbox" type="checkbox" id="country" name="country" value="italy">
+
+                <label class="form__field" for="country">romania</label>
+                <input class="form__checkbox" type="checkbox" id="country" name="country" value="romania">
+
+                <label class="form__field" for="country">united kingdom</label>
+                <input class="form__checkbox" type="checkbox" id="country" name="country" value="uk">
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">condition</legend>
+                <label class="form__field" for="condition">new</label>
+                <input class="form__checkbox" type="checkbox" id="condition" name="condition" value="new">
+
+                <label class="form__field" for="condition">pre-owned</label>
+                <input class="form__checkbox" type="checkbox" id="condition" name="condition" value="pre-owned">
+
+                <label class="form__field" for="condition">certified pre-owned</label>
+                <input class="form__checkbox" type="checkbox" id="condition" name="condition"
+                    value="certified-pre-owned">
+
+                <label class="form__field" for="condition">low mileage</label>
+                <input class="form__checkbox" type="checkbox" id="condition" name="condition" value="low-mileage">
+
+                <label class="form__field" for="condition">one owner</label>
+                <input class="form__checkbox" type="checkbox" id="condition" name="condition" value="one-owner">
+
+                <label class="form__field" for="condition">no accidents</label>
+                <input class="form__checkbox" type="checkbox" id="condition" name="condition" value="no-accidents">
+
+                <label class="form__field" for="condition">salvage</label>
+                <input class="form__checkbox" type="checkbox" id="condition" name="condition" value="salvage">
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">fuel type</legend>
+                <label class="form__field" for="fuel">gas</label>
+                <input class="form__checkbox" type="checkbox" id="fuel" name="fuel" value="gas">
+
+                <label class="form__field" for="fuel">diesel</label>
+                <input class="form__checkbox" type="checkbox" id="fuel" name="fuel" value="diesel">
+
+                <label class="form__field" for="fuel">hybrid</label>
+                <input class="form__checkbox" type="checkbox" id="fuel" name="fuel" value="hybrid">
+
+                <label class="form__field" for="fuel">electric</label>
+                <input class="form__checkbox" type="checkbox" id="fuel" name="fuel" value="electric">
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">transmission</legend>
+                <label class="form__field" for="transmission">automatic</label>
+                <input class="form__checkbox" type="checkbox" id="transmission" name="transmission" value="automatic">
+
+                <label class="form__field" for="transmission">manual</label>
+                <input class="form__checkbox" type="checkbox" id="transmission" name="transmission" value="manual">
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">color</legend>
+                <label class="form__field" for="color">green</label>
+                <input class="form__checkbox" type="checkbox" id="color" name="color" value="green">
+
+                <label class="form__field" for="color">silver</label>
+                <input class="form__checkbox" type="checkbox" id="color" name="color" value="silver">
+
+                <label class="form__field" for="color">brown</label>
+                <input class="form__checkbox" type="checkbox" id="color" name="color" value="brown">
+
+                <label class="form__field" for="color">gray</label>
+                <input class="form__checkbox" type="checkbox" id="color" name="color" value="gray">
+
+                <label class="form__field" for="color">red</label>
+                <input class="form__checkbox" type="checkbox" id="color" name="color" value="red">
+
+                <label class="form__field" for="color">black</label>
+                <input class="form__checkbox" type="checkbox" id="color" name="color" value="black">
+
+                <label class="form__field" for="color">blue</label>
+                <input class="form__checkbox" type="checkbox" id="color" name="color" value="blue">
+
+                <label class="form__field" for="color">white</label>
+                <input class="form__checkbox" type="checkbox" id="color" name="color" value="white">
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">features</legend>
+                <label class="form__field" for="feature">backup camera</label>
+                <input class="form__checkbox" type="checkbox" id="feature" name="feature" value="camera">
+
+                <label class="form__field" for="feature">alloy wheels</label>
+                <input class="form__checkbox" type="checkbox" id="feature" name="feature" value="alloy-wheels">
+
+                <label class="form__field" for="feature">bluetooth</label>
+                <input class="form__checkbox" type="checkbox" id="feature" name="feature" value="bluetooth">
+
+                <label class="form__field" for="feature">heated seats</label>
+                <input class="form__checkbox" type="checkbox" id="feature" name="feature" value="heated-seats">
+
+                <label class="form__field" for="feature">carplay</label>
+                <input class="form__checkbox" type="checkbox" id="feature" name="feature" value="carplay">
+
+                <label class="form__field" for="feature">navigation</label>
+                <input class="form__checkbox" type="checkbox" id="feature" name="feature" value="navigation">
+
+                <label class="form__field" for="feature">sunroof</label>
+                <input class="form__checkbox" type="checkbox" id="feature" name="feature" value="sunroof">
+
+                <label class="form__field" for="feature">leather seats</label>
+                <input class="form__checkbox" type="checkbox" id="feature" name="feature" value="leather-seats">
+            </fieldset>
+
+            <div class="form__submit">
+                <input class="submit__button" type="submit" value="Search">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
